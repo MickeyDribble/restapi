@@ -19,7 +19,7 @@ exports.unHashPass = async(req,res,next) => {
            next();
        } else {
            res.status(500).send({
-               error: error.message
+               message:"Incorrect Password, please try again"
            });
        }
        
